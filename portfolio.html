@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title></title>
+</head>
+<body>
+  <script type="text/javascript" href= "script.js"></script>
+<nav class="nav">
+    <div class="container">
+        <div class="logo">
+            <a href="#">YourLogo</a>
+        </div>
+        <div class="main_list" id="mainListDiv">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">my work</a></li>
+                <li><a href="#">disegn</a></li>
+                <li><a href="#">dcontact</a></li>
+            </ul>
+        </div>
+        <div class="media_button">
+            <button class="main_media_button" id="mediaButton">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+<div class="content">
+  Hi.. I am Sivarajan Rathinavel
+  Software developer working predominately in java
+  and also in web developing 
+  know language java, c++, c, python.
+  scripting language php, javascript..
+  markup language HTML, Css.
+</div>
+    <script type="text/javascript">
+      var mainListDiv = document.getElementById("mainListDiv"),
+    mediaButton = document.getElementById("mediaButton");
+
+mediaButton.onclick = function () {
+    
+    "use strict";
+    
+    mainListDiv.classList.toggle("show_list");
+    mediaButton.classList.toggle("active");
+    
+};
+    </script>
+<section class="home"></section>
+</body>
+</html>
